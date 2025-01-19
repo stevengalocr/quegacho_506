@@ -1,0 +1,109 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.045); 
+  color: white;
+  z-index: 1000;
+  box-sizing: border-box;
+
+  .logo {
+    flex: 0 0 150px; 
+    height: 70px; 
+    background-image: url('../../../assets/logo/quegacho506_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  .navigation {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s; 
+
+      &:hover {
+        color: #555555; 
+      }
+    }
+  }
+
+  .social {
+    flex: 0 0 150px; 
+    display: flex;
+    justify-content: flex-end;
+
+    .instagram-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: color 0.3s; 
+
+      .instagram-icon {
+        width: 24px;
+        height: 24px;
+        background-image: url('../../../assets/instagram-icon.svg'); 
+        background-size: cover;
+      }
+
+      &:hover {
+        color: #555555; 
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap; 
+    padding: 1rem;
+
+    .logo {
+      flex: 1;
+      justify-content: flex-start;
+      height: 35px; 
+    }
+
+    .navigation {
+      flex: 1;
+      justify-content: center;
+      text-align: center; 
+
+      .nav-link {
+        font-size: 1rem;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+
+    .social {
+      flex: 1;
+      justify-content: flex-end;
+
+      .instagram-link {
+        font-size: 0.9rem;
+
+        .instagram-icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+

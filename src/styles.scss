@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; // Evita scroll horizontal
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff; // Fondo blanco para el contenido
+  }
+  
